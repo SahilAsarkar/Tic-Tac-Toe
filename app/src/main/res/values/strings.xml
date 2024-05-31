@@ -4,8 +4,11 @@
     <string name="playButton">Play</string>
 
     <string name="playerSetupTile">Enter Your Names</string>
-    <string name="Label11">Player 1</string>
-    <string name="Label12">Player 2</string>
+    <string name="label11">Player 1</string>
+    <string name="label12">Player 2</string>
     <string name="submitButton">Submit Names</string>
-    <string name="NameHint">Enter Your Name</string>
+    <string name="nameHint">Enter Your Name</string>
+
+    <string name="playAgainButton">Play Again</string>
+    <string name="homeButton">Home</string>
 </resources>

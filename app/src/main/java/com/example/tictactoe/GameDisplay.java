@@ -3,7 +3,6 @@ package com.example.tictactoe;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,16 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class PlayerSetup extends AppCompatActivity {
-    private EditText player1;
-    private EditText player2;
+public class GameDisplay extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.player_setup);
-        player1 = findViewById(R.id.playerName1);
-        player2 = findViewById(R.id.playerName2);
+        setContentView(R.layout.game_display);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -28,13 +24,15 @@ public class PlayerSetup extends AppCompatActivity {
         });
     }
 
-    public void submitButtonClick(View view){
-   String player1name = player1.getText().toString();
-   String player2name = player2.getText().toString();
+public void playAgainButtonClick(View view){
 
-        Intent intent = new Intent(this, GameDisplay.class);
-        intent.putExtra("PLAYERS_NAME",new String[] {player1name, player2name});
-        startActivity(intent);
 
-    }
+}
+
+public void homeButtonClick(View view){
+  Intent intent = new Intent(this, MainActivity.class);
+  startActivity(intent);
+
+}
+
 }
