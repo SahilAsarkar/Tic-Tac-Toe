@@ -10,7 +10,7 @@
     android:background="#D7CCC8">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/player_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/play_again"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@drawable/blue_button"
@@ -42,7 +42,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/home_button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -51,7 +51,7 @@
             android:text="@string/homeButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintStart_toEndOf="@+id/play_again"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -65,5 +65,6 @@
         app:layout_constraintTop_toTopOf="parent"
         custom:boardColor="#000000"
         custom:Xcolor="#FF0000"
-        custom:Ocolor="#0000FF"/>
+        custom:Ocolor="#0000FF"
+        custom:winningLineColor="#00FF00"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
